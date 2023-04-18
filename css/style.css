@@ -1,0 +1,400 @@
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+header {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+
+/* header h1 */
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 5%;
+  left: 50%;
+
+}
+
+.quote-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+/* nav-image div */
+.nav-image {
+  position: relative;
+  width: 100%;
+}
+
+/* nav-image img */
+.nav-image img {
+  display: block;
+  width: 100%;
+}
+
+/* nav list items in div */
+.nav-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  position: absolute;
+  top: 5%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  /* z-index: 1; */
+}
+
+/* list items */
+.nav-items li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-items a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #2148f3a0;
+  border-radius: 10px;
+}
+
+/* Styling for hover and active nav-text */
+.nav-items a:hover {
+    color: black;
+  }
+  
+  .nav-items a:active {
+    color: white;
+    transition: color 100ms;
+  }
+  .nav-items a:focus {
+    outline: 4px solid #0000ff;
+  }
+
+#list2,
+#list3,
+#list4 {
+  margin-top: 1in; 
+}
+
+/* home */
+#list1 {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 3.5rem;
+  margin-top: 30px;
+}
+
+/* fiction */
+#list2 {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 2.5rem;
+}
+
+/* philosophy */
+#list3 {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 2.5rem;
+}
+
+/* spiritual */
+#list4 {
+  grid-column: 3;
+  grid-row: 2;
+  font-size: 2.5rem;
+}
+
+
+  .i-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 10px;
+    /* border: 3px solid black; */
+    position: relative;
+    background: linear-gradient(to bottom, #2148f3a0, #e2e3eb);
+
+}
+
+.h-two {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 40px;
+    color:#ffffff;
+}
+
+#i-div1 {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    text-align: center;
+}
+
+#i-div2 {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#i-div3 {
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+    text-align: center;
+    font-size: 20px;
+}
+h3 a {
+  text-decoration: none;
+}
+
+h3 a:hover {
+  color: black;
+}
+
+h3 a:active {
+  color: white;
+  transition: color 100ms;
+}
+
+
+
+#i-div4 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 2;
+    font-size: 25px;
+    text-align: center;
+    background-image: url("images/fiction_art.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+}
+
+#i-div5 {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 2;
+    font-size: 25px;
+    text-align: center;
+    background-image: url("images/philo_pic.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+}
+
+#i-div6 {
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 2;
+    font-size: 25px;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+#i-div6 .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/mixed_symbol.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: rotate(90deg);
+}
+
+#i-div6 h3,
+#i-div6 p {
+  position: relative;
+}
+
+
+main::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top:0%;
+  left:0%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/long_pic_books.jpg");
+  background-repeat: repeat;
+  opacity: 0.2;
+  background-color:rgba(250, 180, 248, 0.5);
+  pointer-events: none;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+main {
+  position: relative;
+}
+
+/* fiction page main */
+.f-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px; 
+}
+
+.f-div {
+  /* background-color: #ddd; */
+  padding: 20px;
+  text-align: center;
+  border-radius: 30;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* philosophy page main */
+.p-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.p-div {
+  padding: 20px;
+  text-align: center;
+  border-radius: 30;
+  object-fit: cover;
+  
+
+}
+
+#pdiv1 {
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+
+  
+}
+
+#pdiv2 {
+  width: 100%;
+  height: 200px;
+  margin-top: 40px;
+}
+#pdiv3 {
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+}
+
+#pdiv4 {
+  width: 100%;
+  height: 200px
+}
+
+#pdiv5 {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+
+/* spiritual page main */
+.s-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.s-div {
+  padding: 20px;
+  text-align: center;
+  border-radius: 30;
+  object-fit: cover;
+
+}
+
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: normal;
+    color: black;
+}
+
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+
+footer {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    background-color: transparent;
+    margin-bottom: 5px;
+   
+}
+
+
+  
+  /* Media queries for smaller screens */
+  @media (max-width: 768px) {
+    .nav-items {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+    }
+  
+    #list1 {
+      grid-row: 1;
+    }
+  
+    #list2 {
+      grid-row: 2;
+    }
+  
+    #list3 {
+      grid-row: 3;
+    }
+  
+    #list4 {
+      grid-row: 4;
+    }
+  
+    .nav-items a {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-items {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
